@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            WEB Portofolio
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=divece-width, initial-scale=1">
+        <script>
+            function toggleMenu(){
+                const menu = document.getElementById('menu-3')
+                menu.classList.toggle('menu-open');
+            }
+        </script>
+    </head>
+    <body>
+        <div id="first">
+            <div id="header">
+                <img src="Image/WG1.png" id="logo" alt="logo">
+                <div id="menu">
+                    <img src="Image/navicon.png" id="nav-icon" alt="icon" onclick="toggleMenu();">
+                    <div id="menu-text" onclick="toggleMenu();">Menu</div>
+                    <div class="content" id="menu-3">
+                        <a href="#first" class="kolom_1">Home</a>
+                        <a href="#second" class="kolom_1 kolom_1_tengah">Karya</a>
+                        <a href="#third" class="kolom_1">Kontak</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            <div class="content">
+                <div id="welcome">
+                    <h1>Selamat Datang <br> di Website Portofolio Saya</h1>
+                    <a href="#second">Lihat Karya</a>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="content">
+                <h2>Karya Saya</h2>
+                <div class="kolom_1">
+                    <a href="portofolio.html">
+                        <div class="semua_karya">
+                            <img src="Image/bg1.jpg" alt="Background">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi">Deskripsi dari setiap projek</p>
+                </div>
+                <div class="kolom_1">
+                    <a href="portofolio.html">
+                        <div class="semua_karya">
+                            <img src="Image/bg1.jpg" alt="Background">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi">Deskripsi dari setiap projek</p>
+                </div>
+                <div class="kolom_1">
+                    <a href="portofolio.html">
+                        <div class="semua_karya">
+                            <img src="Image/bg1.jpg" alt="Background">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi">Deskripsi dari setiap projek</p>
+                </div>
+                <div class="clear"></div> 
+            </div>
+        </div>
+        <div id="third">
+            <div class="content">
+                <h2>Kontak Saya</h2>
+
+                <div class="kolom_2">
+                    <form action="">
+                        <input type="text" name= "Nama" placeholder="Nama">
+                        <input type="email" name="Email"placeholder="Email">
+                        <textarea name="Pesan" placeholder="Pesan" cols="30" rows="10"></textarea>
+                        <input type="Submit" name="Submit" value="Kirim">
+                    </form>
+                </div>
+
+                <div class="kolom_2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15813.807990264946!2d110.39128684154053!3d-7.741786534248702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1668358573054!5m2!1sid!2sid" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+
+        <div id="footer">
+            <p>&copy; Kodrat Nusantara 2022</p>
+        </div>
+
+    </body>
+</html>
